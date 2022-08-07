@@ -1,5 +1,5 @@
-import { ChangeDetectionStrategy, Component } from '@angular/core'
-import { DestroyService } from './services/destroy.service'
+import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { DestroyService } from './shared';
 
 @Component({
   selector: 'app-root',
@@ -9,5 +9,6 @@ import { DestroyService } from './services/destroy.service'
   providers: [DestroyService],
 })
 export class AppComponent {
+  theme = 'blue';
   constructor(private readonly destroyService: DestroyService) {}
 }
